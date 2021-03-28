@@ -1,0 +1,161 @@
+/* 主页样式 */
+.topbar-wrapper {
+  width: 100%;
+  background-color: #333;
+  line-height: 40px;
+  height: 40px;
+}
+.topbar a {
+  font-size: 12px;
+  color: #b0b0b0;
+  display: block;
+}
+/* 超链接移入效果 */
+.topbar a:hover {
+  color: white;
+}
+/* 设置分隔符 */
+.topbar .line {
+  font-size: 12px;
+  color: #424242;
+  margin: 0 8px;
+}
+/* 设置左导航栏 */
+.service,
+.topbar li {
+  float: left;
+}
+.app {
+  position: relative;
+}
+/* 小三角样式 */
+.app::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 6px solid transparent;
+  border-top: none;
+  border-bottom-color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+.app:hover .qrcode,
+.app:hover::after {
+  display: block;
+  height: 148px;
+}
+/* 设置二维码样式 */
+.app .qrcode {
+  /* display: none; */
+  width: 124px;
+  height: 0px;
+  /* 隐藏超出部分 */
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+  line-height: 1;
+  position: absolute;
+  margin-left: -50px;
+  /* 用于设置过度效果 */
+  transition: height 0.3s;
+}
+.app .qrcode img {
+  margin: 17px;
+  margin-bottom: 14px;
+}
+.app .qrcode span {
+  display: block;
+  text-align: center;
+  color: #424242;
+  font-size: 14px;
+}
+
+/* 设置友导航栏 */
+.shop-cart,
+.user-info {
+  float: right;
+}
+
+/* 设置购物车的样式 */
+
+.shop-cart a {
+  width: 120px;
+  border-color: #424242;
+  text-align: center;
+}
+/* 设置购物车悬浮效果 */
+.shop-cart:hover a {
+  color: #ff6700;
+  background-color: white;
+}
+.shop-cart:hover div {
+  height: 124px;
+}
+.shopping-cart-info {
+  /* display: none; */
+  overflow: hidden;
+  background-color: white;
+  width: 395px;
+  height: 0px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+  /* border: 1px solid red ; */
+  margin-left: -275px;
+  transition: height 0.3s;
+  z-index: -1;
+}
+.shopping-cart-info span {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.shop-cart i {
+  margin-right: 4px;
+}
+
+.user-info {
+  margin-right: 20px;
+}
+
+/* 头部导航栏样式 */
+
+.header {
+  height: 100px;
+  background-color: aquamarine;
+}
+.header .logo {
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin-top: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header .logo a {
+  position: absolute;
+  display: block;
+  width: 55px;
+  height: 55px;
+  left: 0;
+  background-color: #ff6700;
+  background-image: url(../img/mi-logo.png);
+  background-position: center;
+  transition: left 0.3s;
+}
+.header .logo .home {
+  background-image: url(../img/mi-home.png);
+  left: -55px;
+}
+
+.header .logo:hover .mi {
+  left: 55px;
+}
+
+.header .logo:hover .home {
+  left: 0;
+}
