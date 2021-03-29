@@ -105,7 +105,8 @@
   /* border: 1px solid red ; */
   margin-left: -275px;
   transition: height 0.3s;
-  z-index: -1;
+  z-index: 999;
+  position: absolute;
 }
 .shopping-cart-info span {
   display: block;
@@ -213,4 +214,44 @@
   height: 228px;
   border-top: 1px solid rgb(244, 244, 244);
   box-shadow: 0 2px rgb(0, 0, 0, 0.2);
+}
+
+/* 搜索框 */
+.search-wrapper {
+  width: 296px;
+  height: 50px;
+  float: right;
+  background-color: aqua;
+  margin-top: 25px;
+}
+.search-wrapper .search-inp {
+  box-sizing: border-box;
+  float: left;
+  height: 50px;
+  width: 244px;
+  border: 1px solid rgb(244, 244, 244);
+  padding: 0 10px;
+  font-size: 16px;
+}
+.search-wrapper .search-btn {
+  float: left;
+  width: 52px;
+  height: 50px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid rgb(244, 244, 244);
+  border-left: none;
+  color: #616161;
+}
+
+.search-wrapper .search-inp:focus {
+  border: 1px solid #ff6700;
+}
+.search-wrapper .search-inp:focus + .search-btn {
+  border: 1px solid #ff6700;
+  border-left: none;
+}
+.search-wrapper .search-btn:hover{
+  background-color: #ff6700;
+  color: white;
 }
