@@ -123,6 +123,11 @@
 
 /* 头部导航栏样式 */
 
+.header-wrapper {
+  position: relative;
+  /* background-color: red; */
+}
+
 .header {
   height: 100px;
   /* background-color: aquamarine; */
@@ -189,4 +194,23 @@
 
 .nav-wrapper li a:hover {
   color: #ff6700;
+}
+
+.nav .goods-info {
+  /* background-color: #ff6700; */
+  width: 100%;
+  position: absolute;
+  border-top: 1px solid rg(244, 244, 244);
+  box-shadow: 0 5px rgb(0, 0, 0, 0.2);
+  top: 100px;
+  left: 0;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+.nav .show:hover ~ .goods-info,
+.goods-info:hover {
+  height: 228px;
+  border-top: 1px solid rgb(244, 244, 244);
+  box-shadow: 0 2px rgb(0, 0, 0, 0.2);
 }
