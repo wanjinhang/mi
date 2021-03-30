@@ -186,8 +186,8 @@
   position: relative;
 }
 .all-goods {
-  /* visibility: hidden; */
-  background-color: red;
+  visibility: hidden;
+  /* background-color: red; */
   margin-right: 30px;
 }
 .left-menu {
@@ -282,4 +282,65 @@
 .search-wrapper .search-btn:hover {
   background-color: #ff6700;
   color: white;
+}
+/* 设置banner */
+.banner {
+  position: relative;
+  height: 460px;
+}
+.banner .img-list li {
+  position: absolute;
+}
+
+.banner img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* 设置导航点 */
+.banner .pointer {
+  position: absolute;
+  bottom: 22px;
+  right: 35px;
+}
+
+.banner .pointer a {
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(137, 135, 130);
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.banner .pointer a:hover,
+.banner .pointer a:active {
+  background-color: white;
+}
+
+.banner .prev-next a {
+  display: block;
+  width: 40px;
+  height: 70px;
+  /* background-color: red; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.prev {
+  left: 234px;
+  background-image: url(../img/icon-slides.png);
+  background-position: 82px;
+}
+.next {
+  right: 0;
+  background-image: url(../img/icon-slides.png);
+  background-position: 40px;
+}
+.prev:hover {
+  background-position: 0px;
+}
+.next:hover {
+  background-position: 120px;
 }
